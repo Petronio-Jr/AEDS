@@ -44,7 +44,7 @@ int main() {
         cout << "\n\t7.Adicionar um valor para todos os elementos do vetor";
         cout << "\n\t8.Adicionar um valor para todos os elementos nao divisiveis por 3";
         cout << "\n\t9.Remover um valor do vetor";
-        cout << "\n\t10.Remover a primeira aparição de um valor do vetor";
+        cout << "\n\t10.Remover a primeira apariÃ§Ã£o de um valor do vetor";
         cout << "\n\t0.Sair\n";
         cin >> opcao;
         cout << endl;
