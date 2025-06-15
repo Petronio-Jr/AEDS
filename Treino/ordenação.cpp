@@ -1,3 +1,5 @@
+//Ordena somente os k primeiros valores do vetor
+
 #include <iostream>
 using namespace std;
 
