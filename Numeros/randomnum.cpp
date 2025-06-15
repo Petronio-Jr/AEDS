@@ -4,7 +4,7 @@
 using namespace std;
 
 int newmain() {
-	srand(time(NULL));             //gerando numero aleatório
+	srand(time(NULL));             //gerando numero aleatÃ³rio
 
 	ofstream arquivo("entrada.txt");   // comando que permite enviar o numero pra um arquivo.txt
 	int max = 1000;
