@@ -2,14 +2,14 @@
 #include "matrizes.h"
 using namespace std;
 
-void exibicao(Vetor v) { //função de exibição 
+void exibicao(Vetor v) { //funÃ§Ã£o de exibiÃ§Ã£o 
 
 	cout << "Matriz = {";
 
 	for (int i = 0 ,k = 0; i < TAM; i++) { //linhas
 		for (int j = 0; j < TAM; j++) { //colunas
 
-			int *p = (int*)v + i * TAM + j; //posição dos numeros na matriz
+			int *p = (int*)v + i * TAM + j; //posiÃ§Ã£o dos numeros na matriz
 			cout << *p << " ";
 
 		}
