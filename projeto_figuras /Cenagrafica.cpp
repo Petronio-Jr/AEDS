@@ -1,8 +1,6 @@
-/*PetrÙnio Dias de Carvalho J˙nior 
+/*Petr√¥nio Dias de Carvalho J√∫nior 
 22/04
-CÛdigo criado com o intuito de apresentar um menu para seleÁ„o de uma cena gr·fica e enviar os dados obtidos para um arquivo de texto
-Obs: o aplicativo de programaÁ„o usado n„o exibe corretamente palavras acentuadas e n„o consegui obter acesso ao netbeans na faculdade devido 
-a uma atualizaÁ„o do sistema, portanto realizei o cÛdigo sem acentuaÁ„o para evitar alguma desavenÁa na hora de testar o cÛdigo em outro aplicativo.
+C√≥digo criado com o intuito de apresentar um menu para sele√ß√£o de uma cena gr√°fica e enviar os dados obtidos para um arquivo de texto
 */
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -16,34 +14,34 @@ int newmain() {
 	float x, y, z;
 	int base;
 
-	ofstream arquivo("figuras.txt");//ofstream usado para lanÁar informaÁıes no arquivo texto
-	string nome;//string usado para permitir ao usu·rio inserir o nome das formas geomÈtricas
+	ofstream arquivo("figuras.txt");//ofstream usado para lan√ßar informa√ß√µes no arquivo texto
+	string nome;//string usado para permitir ao usu√°rio inserir o nome das formas geom√©tricas
 
 	printf("\n\t\t\tInsira a descricao da cena grafica:");
 
-	printf("\n\n*Insira o nome da figura e seus valores correspondentes.");//informaÁıes de funcionamento do programa
+	printf("\n\n*Insira o nome da figura e seus valores correspondentes.");//informa√ß√µes de funcionamento do programa
 	printf("\n*Digite os nomes sem acentuacao e com primeira letra maiuscula.");
 	
-	printf("\n\nOpcoes de figuras 2D:");//menu de opÁıes 2D
+	printf("\n\nOpcoes de figuras 2D:");//menu de op√ß√µes 2D
 	printf("\n\n(Quadrado) (Triangulo) (Retangulo) (Losango) (Circulo) (Coroa_circular) (Trapezio)");
 	
-	printf("\n\nOpcoes de figuras 3D:");//menu de opÁıes 3D
+	printf("\n\nOpcoes de figuras 3D:");//menu de op√ß√µes 3D
 	printf("\n\n(Cubo) (Piramide) (Esfera) (Cone) (Cilindro) (Paralelepipedo) ");
 
 	printf("\n\n*Digite 'Fim' para sair.");//comando para sair 
 	printf("\n*Digite 'Ajuda' para ver as informacoes necessarias de cada figura");
 	printf("\n\n------------------------------------------------------------------------------------------------");
 
-	printf("\n\nEspecificacoes: (Insira caso houver)\nValor 1 = (raio, lado, diagonal maior, raio maior, base maior, largura)");//mostra o que cada vari·vel representa nos diferentes casos
+	printf("\n\nEspecificacoes: (Insira caso houver)\nValor 1 = (raio, lado, diagonal maior, raio maior, base maior, largura)");//mostra o que cada vari√°vel representa nos diferentes casos
 	printf("\nValor 2 = (base, diagonal menor, raio menor, base menor, geratriz, apotema, comprimento) ");
 	printf("\nValor 3 = (altura)");
 	printf("\n\nNome da figura: ");
 	cin >> nome;
-	arquivo << nome;//lanÁa o nome da figura no arquivo texto
+	arquivo << nome;//lan√ßa o nome da figura no arquivo texto
 
 	while (nome != "Fim") {
 
-		if (nome == "Ajuda") {//menu adicional que informa os valores nescess·rios para o calculo de cada figura
+		if (nome == "Ajuda") {//menu adicional que informa os valores nescess√°rios para o calculo de cada figura
 			printf("\nFiguras 2D");
 			printf("\n\nQuadrado - necessario o valor do lado");
 			printf("\nTriangulo - necessario o valor da base e da altura");
@@ -62,20 +60,20 @@ int newmain() {
 			printf("\nPiramide Quadrada - necessario o valor do lado, altura e apotema");
 			printf("\nParalelepipedo - necessario o valor do comprimento, largura e altura");
 
-			printf("\n\nNome da figura: ");//comando colocado dentro do while para iniciar a repetiÁ„o
-			cin >> nome;// o usu·rio deve inserir o nome da forma geomÈtrica de acordo com as instruÁıes apresentadas
+			printf("\n\nNome da figura: ");//comando colocado dentro do while para iniciar a repeti√ß√£o
+			cin >> nome;// o usu√°rio deve inserir o nome da forma geom√©trica de acordo com as instru√ß√µes apresentadas
 			arquivo << endl << nome;
 		}
 		
-		if (nome == "Piramide") {// condiÁ„o adicional que permite ao usu·rio escolher entre pir‚mides de duas bases distintas
+		if (nome == "Piramide") {// condi√ß√£o adicional que permite ao usu√°rio escolher entre pir√¢mides de duas bases distintas
 			printf("\n1.Base Triangular");
 			printf("\n2.Base Quadrada\n\n");
 			scanf("%d", &base);
 			arquivo << " " << base;
 		}
 
-		printf("\nValor 1: ");// valor que pode representar diferentes informaÁıes
-		scanf("%f", &x);//vari·vel que assumir· um valor no calculo das ·reas e volumes
+		printf("\nValor 1: ");// valor que pode representar diferentes informa√ß√µes
+		scanf("%f", &x);//vari√°vel que assumir√° um valor no calculo das √°reas e volumes
 		arquivo << " " << x;// comando usado para enviar o dado recebido para o arquivo de texto
 		printf("Valor 2: ");
 		scanf("%f",&y);
@@ -84,7 +82,7 @@ int newmain() {
 		scanf("%f", &z);
 		arquivo << " " << z;
 
-		printf("\n\nNome da figura: ");//comando colocado dentro do while para gerar uma repetiÁ„o
+		printf("\n\nNome da figura: ");//comando colocado dentro do while para gerar uma repeti√ß√£o
 		cin >> nome;
 		arquivo << endl << nome;
 	}
