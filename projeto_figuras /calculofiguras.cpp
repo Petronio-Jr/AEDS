@@ -1,8 +1,6 @@
 /*Petrônio Dias de Carvalho Júnior
 22/04
 Código criado com o intuito de calcular a área e o volume das figuras apresentadas no arquivo de texto através das medidas contidas nele
-Obs: o aplicativo de programação usado não exibe corretamente palavras acentuadas e não consegui obter acesso ao netbeans na faculdade devido
-a uma atualização do sistema, portanto realizei o código sem acentuação para evitar alguma desavença na hora de testar seu funcionamento em outro aplicativo.
 */
 
 #include <iostream>
